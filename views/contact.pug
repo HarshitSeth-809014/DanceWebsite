@@ -1,0 +1,17 @@
+extends base.pug
+
+block content 
+    div#contactBody
+        h1 Contact Us 
+        form(action="/contact", method="post", class="myForm") 
+            div#form-label Name:-
+            input(type="text", name="name", class="myInput", placeholder="EG. John Gates")
+            div#form-label Email:-
+            input(type="email", name="email", class="myInput", placeholder="EG.someone@example.com")
+            div#form-label Phone Number:-
+            input(type="phone", name="phone", class="myInput", placeholder="EG. 9999999999")
+            div#form-label Address :-
+            input(type="text", name="address", class="myInput", placeholder="Your home address here")
+            div#form-label Something about yourself:-
+            input(type="text", name="desc", class="myInput", placeholder="Write somethong about yourself")
+            button(type="submit", class="myInput inpBut") Submit:-

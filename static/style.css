@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#logo{
+    filter: invert(1);
+    height: 29px;
+    width: 26px;
+    float: left;
+}
+
+#navbar{
+    background-color: #211e1e;
+    padding: 10px 18px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    font-size: 1.5rem;
+    font-family: 'Recursive', sans-serif;
+    text-decoration: none;
+    color: white;
+
+    padding: 12px 30px;
+}
+
+#introSection{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 616px;
+    background: center / cover no-repeat url('/static/bg.jpg');
+}
+#introSection .small{
+    font-size: 29px;
+}
+#introSection .big{
+    font-size: 55px;
+}
+
+#missionSection{
+    background-color: #1d1a1acb;
+    height: 350px;
+}
+#missionSection h1{
+    color: white;
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    padding: 23px;
+
+    font-size: 34px;
+}
+
+.mainCard{
+    display: flex;
+    align-items: stretch;
+
+    height: 105%;
+}
+
+.card{
+    display: inline-block;
+
+    border: 2px solid white;
+    width: 29%;
+    border-radius: 10px;
+    margin: 14px 23px;
+    height: 50%;
+
+    background: linear-gradient(
+        121deg
+        , #151515, #4b4949);
+    box-shadow: 17px 18px 36px -1px rgba(0,0,0,0.8);
+}
+.card h2{
+    text-align: center;
+    color: white;
+    padding: 11px;
+    font-family: 'Padauk', sans-serif;
+
+}
+.card p{
+    color: white;
+    font-family: 'Padauk', sans-serif;
+    padding: 5px 20px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+#sponsorsSection{
+    background-color: #211e1ec0;
+    height: 300px;
+}
+#sponsorsSection h1{
+    color: white;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 23px;
+
+    font-size: 34px;
+}
+
+#sponsors{
+    height: 187px;
+    max-width: 1000px;
+    margin: 12px auto;
+}
+.spImage{
+    height: 75px;
+    margin: 20px;
+}
+
+footer{
+    background-color: black;
+    height: 50px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#contactBody{
+    background-color: #211e1ed8;
+    color: white;
+    width: 100vw;
+    height: 85.1vh;
+    font-family: 'KoHo', sans-serif;
+}
+#contactBody h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 9px;
+}
+#contactBody .myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactBody .myInput{
+    width: 64%;
+    margin: 6px;
+    padding: 11px;
+    border-radius: 25px;
+    border: 0;
+    font-size: 16px;
+}
+#contactBody .inpBut{
+    color: white;
+    background-color: rgba(10, 10, 10, 0.815);
+}
+#contactBody .inpBut:hover{
+    background-color: rgba(10, 10, 10, 0.945);
+    cursor: pointer;
+}
+#contactBody #form-label{
+    margin-top: 7px;
+    font-size: 20px;
+}
